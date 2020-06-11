@@ -1,5 +1,7 @@
 package by.kharitonov.task3;
 
+import java.io.IOException;
+
 public class ThirdTaskMain {
     public static void main(String[] args) {
         try {
@@ -10,7 +12,7 @@ public class ThirdTaskMain {
                     generateRandomArray(count);
             PrintService printService = new PrintService();
             printService.printRandomArray(ms);
-        } catch (NumberFormatException | ArrayIndexOutOfBoundsException ex) {
+        } catch (NumberFormatException | IOException ex) {
             ex.printStackTrace();
         }
     }

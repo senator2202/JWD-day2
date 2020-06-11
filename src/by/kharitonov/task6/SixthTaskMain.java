@@ -1,5 +1,6 @@
 package by.kharitonov.task6;
 
+import java.io.IOException;
 import java.util.Calendar;
 
 public class SixthTaskMain {
@@ -12,7 +13,7 @@ public class SixthTaskMain {
                     dateTimeService.calculateDateTime(taskExecutor);
             DateTimeConsole console = new DateTimeConsole();
             console.printTaskDateTime(taskExecutor.getName(), calendar);
-        } catch (NumberFormatException ex) {
+        } catch (NumberFormatException | IOException ex) {
             ex.printStackTrace();
         }
     }

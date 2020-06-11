@@ -1,11 +1,12 @@
 package by.kharitonov.task1;
 
+import java.io.IOException;
+
 public class NameService {
-    public String formName(String[] args) {
-        StringBuilder sb = new StringBuilder();
-        for (String s : args) {
-            sb.append(s).append(" ");
+    public String formName(String[] args) throws IOException {
+        if (args==null || args.length==0) {
+            throw new IOException("Enter your name!");
         }
-        return sb.toString();
+        return args[0];
     }
 }

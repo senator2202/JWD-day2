@@ -1,9 +1,16 @@
 package by.kharitonov.task4;
 
+import java.io.IOException;
+
 public class FoursTaskMain {
     public static void main(String[] args) {
         PasswordSample obj = new PasswordSample();
-        String compareMessage = obj.comparePassword(args[0]);
-        System.out.println(compareMessage);
+        String compareMessage = null;
+        try {
+            compareMessage = obj.comparePassword(args);
+            System.out.println(compareMessage);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
