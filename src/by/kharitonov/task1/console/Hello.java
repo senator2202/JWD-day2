@@ -1,4 +1,4 @@
-package by.kharitonov.task1;
+package by.kharitonov.task1.console;
 
 public class Hello {
     public void printHello(String name) {

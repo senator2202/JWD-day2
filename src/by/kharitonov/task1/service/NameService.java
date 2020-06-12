@@ -1,4 +1,4 @@
-package by.kharitonov.task1;
+package by.kharitonov.task1.service;
 
 import java.io.IOException;
 

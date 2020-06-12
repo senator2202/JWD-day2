@@ -1,34 +1,10 @@
 package by.kharitonov.task7;
 
+import java.time.DayOfWeek;
+
 public class DateConsole {
-    public void printDayOfWeek(int day) {
-        String result = "";
-        switch (day) {
-            case 1:
-                result = "Monday";
-                break;
-            case 2:
-                result = "Tuesday";
-                break;
-            case 3:
-                result = "Wednesday";
-                break;
-            case 4:
-                result = "Thursday";
-                break;
-            case 5:
-                result = "Friday";
-                break;
-            case 6:
-                result = "Saturday";
-                break;
-            case 7:
-                result = "Sunday";
-                break;
-            default:
-                break;
-        }
-        System.out.println("You was born on: " + result);
+    public void printDayOfWeek(DayOfWeek day) {
+        System.out.println("You were born on: " + day);
     }
 
     public void printFullYears(int years) {

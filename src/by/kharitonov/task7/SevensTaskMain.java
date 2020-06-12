@@ -1,6 +1,7 @@
 package by.kharitonov.task7;
 
 import java.io.IOException;
+import java.time.DayOfWeek;
 import java.util.Calendar;
 
 public class SevensTaskMain {
@@ -9,7 +10,7 @@ public class SevensTaskMain {
             DateParser dateParser = new DateParser();
             Calendar calendar = dateParser.parseDate(args);
             DateService dateService = new DateService();
-            int dayOFWeek = dateService.getDayOfWeek(calendar);
+            DayOfWeek dayOFWeek = dateService.getDayOfWeek(calendar);
             int fullYears = dateService.calculateFullYears(calendar);
             boolean isBirthday = dateService.isBirthDay(calendar);
             DateConsole dateConsole = new DateConsole();

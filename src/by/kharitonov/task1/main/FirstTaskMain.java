@@ -1,4 +1,7 @@
-package by.kharitonov.task1;
+package by.kharitonov.task1.main;
+
+import by.kharitonov.task1.console.Hello;
+import by.kharitonov.task1.service.NameService;
 
 import java.io.IOException;
 
